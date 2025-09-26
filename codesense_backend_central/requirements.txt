@@ -1,0 +1,8 @@
+django>=4.2
+djangorestframework
+django-cors-headers
+pymongo
+python-dotenv
+bcrypt
+cryptography
+PyJWT
