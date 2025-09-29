@@ -10,6 +10,10 @@ export default defineConfig({
     host: true,
     port: 9000
   },
+  preview: {
+    host: true,
+    port: 9001
+  },
   plugins: [
     tanstackRouter({
       target: 'react',

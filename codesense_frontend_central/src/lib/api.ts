@@ -1,13 +1,17 @@
 import { redirect } from '@tanstack/react-router';
 import axios, { type AxiosInstance, type AxiosResponse, AxiosError } from 'axios';
 
+const ip = window.location.hostname;
+const port = 8000; // adjust if needed
+export const BACKEND_URL = `http://${ip}:${port}`;
+
 // Base API Client with common functionality
 export class BaseApiClient {
   protected axiosInstance: AxiosInstance;
 
   constructor() {
     this.axiosInstance = axios.create({
-      baseURL: import.meta.env.VITE_API_BASE_URL,
+      baseURL: BACKEND_URL,
       headers: {
         'Content-Type': 'application/json',
       },

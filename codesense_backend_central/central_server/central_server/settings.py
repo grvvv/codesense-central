@@ -93,10 +93,10 @@ MONGO_DB_NAME = os.getenv("MONGO_DB_NAME")
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:9000",
     "http://127.0.0.1:9000",
-    "http://192.168.0.203:9000",
-    "http://localhost:4173",
-    "http://127.0.0.1:4173",
-    "http://192.168.0.203:4173"
+    "http://192.168.0.125:9000",
+    "http://localhost:9001",
+    "http://127.0.0.1:9001",
+    "http://192.168.0.125:9001"
 ]
 
 # Password validation
